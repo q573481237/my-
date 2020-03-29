@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="许特松">
+  <meta name="Keywords" content="梅梅专属">
+  <meta name="Description" content="梅梅专属，开心必备">
+  <title>梅梅独用</title>
+ <style>
+    *{padding:0;margin:0;}
+	html{height:100%;weight=100%;}
+	body{height:100%;weight=100%;background:tomato}
+   .title{width:100%;height:auto;font-size:50px;text-align:center;color:white;letter-spacing:10px;margin-top:60px;}
+   .en_title{width:100%;height:auto;font-size:20px;color:#ccc;text-align:center;margin:10px 0 50px 0;}
+   .title{width:100%;height:auto;font-size:50px;text-align:center;color:white;letter-spacing:10px;margin-top:60px;}
+   .imgList{width:1200px;height:380px;margin:0 auto;list-style:none;}
+   .imgList>li{width:270px;height:380px;float:left;margin-right:30px;overflow:hidden;position:relative;}
+   .imgList>li>img{width:100%;height:100%;}
+   .noneBox{width:230px;height:190px;padding:10px 20px 30px;position:absolute;top:320px;left  0;background:rgba(0,0,0,0.5);color:white;letter-spacing:1px;cursor:pointer;}
+ </style>
+</head>
+ <body>
+  <div class="title">
+    给我最爱的梅梅   
+  </div>
+  <div class="en_title">
+    I Love You   
+  </div>
+  <ul class="imgList">
+    <li>
+	<img src="img/1.jpg" alt="不见啦"/>
+	 <div class="noneBox">
+	  夜空
+	   <p style="width:100%;height:90px;"></p>
+	    <span>
+		我们一起仰望
+        </span>
+		<br/>
+	    <span>
+		牵着手
+        </span>
+		<br/>
+	    <span>
+		抱着我们的小孩
+        </span>
+		<br/>
+	 </div>
+    </li>
+	<li>
+	<img src="img/2.jpg" alt="不见啦"/>
+	<div class="noneBox">
+	  森林
+	   <p style="width:100%;height:90px;"></p>
+	    <span>
+		你想去的地方
+        </span>
+		<br/>
+	    <span>
+		我陪着你
+        </span>
+		<br/>
+	    <span>
+		我们漫步其中
+        </span>
+		<br/>
+	 </div>
+    </li>
+	<li>
+	<img src="img/3.jpg" alt="不见啦"/>
+	<div class="noneBox">
+	  拥抱
+	   <p style="width:100%;height:90px;"></p>
+	    <span>
+		我们享受彼此的体温
+        </span>
+		<br/>
+	    <span>
+		温柔的抱着对方
+        </span>
+		<br/>
+	    <span>
+		一直这样下去
+        </span>
+		<br/>
+	 </div>
+    </li>
+	<li>
+	<img src="img/4.jpg" alt="不见啦"/>
+	<div class="noneBox">
+	  情书
+	   <p style="width:100%;height:90px;"></p>
+	    <span>
+		这是我们的情书
+        </span>
+		<br/>
+	    <span>
+		我爱你
+        </span>
+		<br/>
+	    <span>
+		我很想你
+        </span>
+		<br/>
+	 </div>
+    </li>
+  </ul>
+  <div class="min">
+    我好想好想你啊   
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+     $(function(){
+	   $(".imgList li .noneBox").hover(function(){
+		 if ($(this).is(":animated"))
+		 {
+			 return;
+		 }else{
+			$(this).animate({"top":"160px"},300)
+		 }
+	   },function(){
+		    $(this).animate({"top":"320px"},300);
+			return;
+	   })	
+     })
+  </script>
+ </body>
+</html>
